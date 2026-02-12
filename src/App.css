@@ -1,0 +1,51 @@
+.cv-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cv-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cv-content {
+  flex: 1;
+  background: #f5f7fa;
+  border-radius: 0 0 10px 10px;
+  min-height: 500px;
+}
+
+.cv-footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cv-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .cv-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .cv-content {
+    padding: 1rem;
+  }
+}
+
