@@ -1,16 +1,63 @@
-# React + Vite
+# Cv_internet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my CV! Here you can see my projects, life and experience.
 
-Currently, two official plugins are available:
+This is a modern CV/portfolio website built with React, HTML5, and CSS3.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Customizable Tabs**: Navigate between different sections (About Me, Projects, Experience, Gallery)
+- **Image Placeholders**: Ready-to-use image components in different sizes
+- **Responsive Design**: Works perfectly on mobile, tablet, and desktop
+- **Modern Styling**: Clean, professional design with smooth animations
+- **Dark/Light Mode Support**: Automatically adapts to user's system preference
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+### Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+### Build
+
+```bash
+npm run build
+```
+
+Builds the app for production to the `dist` folder.
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+- `src/components/Tabs.jsx` - Customizable tab navigation component
+- `src/components/ImagePlaceholder.jsx` - Flexible image placeholder component
+- `src/App.jsx` - Main application component with CV sections
+- `src/App.css` - Main application styles
+- `src/index.css` - Global styles
+
+## Customization
+
+You can easily customize the content by editing the `tabs` array in `src/App.jsx`. Each tab can contain any React component or content you want to display.
+
+## Technologies
+
+- React 19.2
+- Vite 7.3
+- HTML5
+- CSS3
+- ESLint
