@@ -1,0 +1,116 @@
+.image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: rgba(100, 108, 255, 0.05);
+  border: 2px dashed rgba(100, 108, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.image-placeholder:hover {
+  border-color: rgba(100, 108, 255, 0.6);
+  background-color: rgba(100, 108, 255, 0.1);
+}
+
+.image-placeholder.small {
+  width: 150px;
+  height: 150px;
+}
+
+.image-placeholder.medium {
+  width: 100%;
+  max-width: 400px;
+  min-height: 300px;
+}
+
+.image-placeholder.large {
+  width: 100%;
+  min-height: 400px;
+}
+
+.placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  color: rgba(100, 108, 255, 0.6);
+}
+
+.placeholder-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.placeholder-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+
+.image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-caption {
+  padding: 0.75rem 1rem;
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .image-placeholder {
+    background-color: rgba(100, 108, 255, 0.03);
+  }
+
+  .image-placeholder:hover {
+    background-color: rgba(100, 108, 255, 0.08);
+  }
+
+  .placeholder-content {
+    color: rgba(100, 108, 255, 0.5);
+  }
+
+  .image-caption {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .image-placeholder.medium {
+    max-width: 100%;
+    min-height: 250px;
+  }
+
+  .image-placeholder.large {
+    min-height: 300px;
+  }
+
+  .placeholder-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .placeholder-text {
+    font-size: 0.9rem;
+  }
+}
