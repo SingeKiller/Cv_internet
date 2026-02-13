@@ -68,8 +68,8 @@ const projects = [
     id: "portfolio-interactif",
     name: "Portfolio interactif",
     stack: "React, Vite, HTML5, CSS",
-    description: "Site personnel avec sections dynamiques et animations légères.",
-  },
+    description: ["Site personnel avec sections dynamiques et animations légères. ce site effectue sur des connaissances basiques en HTML5 Js(React) et Css,  afin de transmettres ma personnalite et ma motivation a evolue pour un futur proche.Un autre projet web actuellement en developpement...",
+]},
   {
     id: "respiration-mitochondriale",
     name: "Respiration Mitochondriale",
