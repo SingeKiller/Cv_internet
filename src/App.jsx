@@ -75,12 +75,12 @@ const projects = [
     name: "Respiration Mitochondriale",
     stack: "C++ , Python ", 
     description: "Basée sur le modèle de Bertram et al.", 
-        images: ["./ressources/resultats_graph.png","./ressources/resultats_graph13.png","./ressources/resultats_graph14.png"], 
+    images: ["./ressources/resultats_graph.png","./ressources/resultats_graph13.png","./ressources/resultats_graph14.png"], 
     paperUrl: "https://www.math.fsu.edu/~bertram/papers/beta/simpleMK.pdf", 
   },
   {
     id: "edo-chaleur",
-    name: "EDO de la chaleur instationnaire",
+    name: "EDO de la chaleur évolution temporelle",
     stack: "C++",
     description:
       "Basée sur un devoir de l'Université de Bordeaux, avec visualisation en temps réel.",
