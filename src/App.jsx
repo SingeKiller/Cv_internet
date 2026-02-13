@@ -1,43 +1,67 @@
+// Import de React hooks et composants
+import { useState } from 'react';
+import ImageModal from './components/ImageModal';
+import TimelineItem from './components/TimelineItem';
+import ProjectCard from './components/ProjectCard';
+import ProjectDetail from './components/ProjectDetail';
+import LanguageItem from './components/LanguageItem';
+
+// Expériences professionnelles
+
+
+const recommendations = [
+  {
+    name: "Lisl Weynans",
+    email: "lisl.weynans@u-bordeaux.fr",
+  },
+  {
+    name:"Leguebe Michael",
+    email:"michael.leguebe@u-bordeaux.fr",
+  },
+]
+
 const experiences = [
   {
     title: "Responsable d'Admission Commercial",
     company: "Youschool",
-    period: "Janvier 2025 - Aout 2025",
+    period: "Janvier 2025 - Août 2025",
     details: [
-      "Methode ARE: Analyse des besoins, aide a la decision",
+      "Méthode ARE : Analyse des besoins, aide à la décision",
       "Communication et argumentation",
-      "Relaion client et exigence de qualite",
+      "Relation client et exigence de qualité",
     ],
   },
   {
-    title: "Chef de Partie Patisserie",
-    company: "Le 7 Restaurant, Cite du vin",
+    title: "Chef de Partie Pâtisserie",
+    company: "Le 7 Restaurant, Cité du Vin",
     period: "2023-2025",
     details: [
       "Mise en place et respect des processus rigoureux",
       "Gestion des contraintes de production",
-      "Relation client et Exigence de qualite",
-      "Supervisation d'apprentis et de stagiaires",
+      "Relation client et exigence de qualité",
+      "Supervision d'apprentis et de stagiaires",
     ],
   },
   {
     title: "Apprenti Pâtissier",
     company: "Berenils, Pessac",
     period: "2022-2023",
-    details: ["Mise en place des regles des bonne pratiques d'hygiene et de securite",
+    details: ["Mise en place des règles de bonnes pratiques d'hygiène et de sécurité",
         "Gestion des stocks et approvisionnements",
-        "Respect des normes de qualite et de presentation",
+        "Respect des normes de qualité et de présentation",
     ],
   },
   {
-    title: "employee polyvalent mi-temps",
-    company:"courtepaille, villenave d'ornon",
+    title: "Employé polyvalent mi-temps",
+    company: "Courtepaille, Villenave-d'Ornon",
     period:"2017-2018",
-    details:["assignation a divers tache differentes selon les besoins du restaurant",
-        "developpement de polyvalence et d'adaptabilite",
+    details:["Assignation à diverses tâches différentes selon les besoins du restaurant",
+        "Développement de polyvalence et d'adaptabilité",
     ],
   },
 ];
+
+// Projets techniques
 
 const projects = [
   {
@@ -45,44 +69,42 @@ const projects = [
     name: "Portfolio interactif",
     stack: "React, Vite, HTML5, CSS",
     description: "Site personnel avec sections dynamiques et animations légères.",
-    details: [
-      "Architecture en composants réutilisables.",
-      "Mise en page responsive pour mobile et desktop.",
-    ],
   },
   {
     id: "respiration-mitochondriale",
     name: "Respiration Mitochondriale",
     stack: "C++ , Python ", 
-    description: "Basee sur le modele de Bertram et al.", 
+    description: "Basée sur le modèle de Bertram et al.", 
         images: ["/ressources/resultats_graph.png","/ressources/resultats_graph13.png","/ressources/resultats_graph14.png"], 
     paperUrl: "https://www.math.fsu.edu/~bertram/papers/beta/simpleMK.pdf", 
-    details: [ "Simulation numérique et interprétation des résultats.", 
-        "Génération de graphiques pour l'analyse.", 
-    ],
   },
   {
     id: "edo-chaleur",
     name: "EDO de la chaleur instationnaire",
     stack: "C++",
     description:
-      "Basee sur un devoir de l'Universite de Bordeaux, avec visualisation en temps reel.",
-    details: [
-      "Résolution numérique d'équations différentielles.",
-      "Affichage en temps réel des évolutions thermiques.",
-    ],
+      "Basée sur un devoir de l'Université de Bordeaux, avec visualisation en temps réel.",
+    video: "/ressources/edo_video.mp4",
+    image: "/ressources/edo_image.png",
+    pdf: "/ressources/edo_chaleur.pdf",
   },
 ];
 
+
+//  Compétences transversales
+
 const softSkills = [
-  "Maitrise de stress",
+  "Maîtrise du stress",
   "Rigueur",
   "Esprit d'analyse",
-  "Curiosite intellectuelle",
-  "Capacite d'adaptation",
-  "Travail en equipe",
-  "Eloquence",
+  "Curiosité intellectuelle",
+  "Capacité d'adaptation",
+  "Travail en équipe",
+  "Éloquence",
 ];
+
+
+// Langues maîtrisées
 
 const languages = [
   {
@@ -105,29 +127,31 @@ const languages = [
   },
 ];
 
+// Parcours scolaire et diplômes
+
 const parcours = [
   {
-    title: "Licence Ingenierie Mathematiques",
+    title: "Licence Ingénierie Mathématiques",
     school: "Université de Bordeaux",
     period: "2025 - 2026",
   },
   {
-    title: "Brevet Technique de Maitrise Patisserie",
-    school: "institut des saveurs",
+    title: "Brevet Technique de Maîtrise Pâtisserie",
+    school: "Institut des Saveurs",
     period: "2024 - 2025",
   },
   {
-    title:"Mention Complementaire Patisserie",
-    school:"institut des saveurs",
+    title: "Mention Complémentaire Pâtisserie",
+    school: "Institut des Saveurs",
     period:"2023 - 2024",
   },
   {
-    title:"CAP patisserie",
-    school:"institut des saveurs",
+    title: "CAP Pâtisserie",
+    school: "Institut des Saveurs",
     period:"2022 - 2023",
     },
   {
-    title: "Licence Mathematiques fondemmentales",
+    title: "Licence Mathématiques Fondamentales",
     school: "Université de Bordeaux",
     period: "2016 - 2021",
   },
@@ -138,14 +162,28 @@ const parcours = [
   },
 ];
 
+/**
+ * Composant principal de l'application - Portfolio/CV
+ * Gère l'état du modal de zoom d'image et orchestre tous les autres composants
+ */
 export default function App() {
+  // State pour gérer l'image zoomée (null = pas de zoom, string = URL de l'image zoomée)
+  const [zoomedImage, setZoomedImage] = useState(null);
+
   return (
+    // Conteneur principal avec ID pour la navigation "retour en haut"
     <div className="page" id="top">
+     
+      {/* En-tête avec présentation */}
+      
       <header className="hero">
+        {/* Bloc gauche: informations personnelles */}
         <div>
           <p className="eyebrow"></p>
           <h1>Olivier REPAUZET</h1>
-          <p className="subtitle">Futur Ingenieur Mathematiques appliquees et statistiques</p>
+          <p className="subtitle">Futur Ingénieur Mathématiques Appliquées et Statistiques</p>
+          
+          {/* données de contact */}
           <div className="meta">
             <span>Bordeaux, France</span>
             <span>olivier.repauzet@etu.u-bordeaux.fr</span>
@@ -153,78 +191,74 @@ export default function App() {
             <span>Github : https://github.com/SingeKiller</span>
           </div>
         </div>
+
+        {/* Bloc droite: résumé/profil */}
         <div className="summary">
           <h2>Profil</h2>
           <p>
-            Etudiant en Licence ingenierie mathematiques, je suis rigoureux et methodique.
-            Ma curiosite alimente une approche analytique structuree, tounee vers la resolution
-            de probleme,l'optimisation et l'adaptabilite. J'aime la simulation des donnees pour ses
-            representations et ses visualisation concretes des experiences.
+            Étudiant en Licence ingénierie mathématiques, je suis rigoureux et méthodique.
+            Ma curiosité alimente une approche analytique structurée, tournée vers la résolution
+            de problèmes, l'optimisation et l'adaptabilité. J'aime la simulation des données pour ses
+            représentations et ses visualisations concrètes des expériences.
           </p>
         </div>
       </header>
 
       <main className="grid grid--primary">
+        
+        {/* Colonne 1: Parcours scolaire */}
         <section className="card">
           <h2>Parcours</h2>
           <ul className="timeline">
+
+            {/* Boucle pour afficher chaque diplôme */}
             {parcours.map((item) => (
-              <li key={item.title}>
-                <div className="row">
-                  <h3>{item.title}</h3>
-                  <span>{item.period}</span>
-                </div>
-                <p className="muted">{item.school}</p>
-              </li>
+              <TimelineItem
+                key={item.title}
+                title={item.title}
+                period={item.period}
+                subtitle={item.school}
+              />
             ))}
           </ul>
         </section>
 
+        {/* Colonne 2: Expériences professionnelles */}
         <section className="card">
           <h2>Expériences professionnelles</h2>
           <ul className="timeline">
+            
+            {/* Boucle pour afficher chaque expérience */}
             {experiences.map((exp) => (
-              <li key={exp.title}>
-                <div className="row">
-                  <h3>{exp.title}</h3>
-                  <span>{exp.period}</span>
-                </div>
-                <p className="muted">{exp.company}</p>
-                <ul className="bullets">
-                  {exp.details.map((detail) => (
-                    <li key={detail}>{detail}</li>
-                  ))}
-                </ul>
-              </li>
+              <TimelineItem
+                key={exp.title}
+                title={exp.title}
+                period={exp.period}
+                subtitle={exp.company}
+                details={exp.details}
+              />
             ))}
           </ul>
         </section>
 
+        {/* Colonne 3: Grille de projets */}
         <section className="card">
           <h2>Projets</h2>
           <div className="projects">
+            
+            {/* Boucle pour afficher chaque carte de projet */}
             {projects.map((project) => (
-              <article key={project.name} className="project">
-                <h3>{project.name}</h3>
-                <p className="muted">{project.stack}</p>
-                <p>{project.description}</p>
-                <div className="project-actions">
-                  <a
-                    className="button"
-                    href={`#project-${project.id}`}
-                    aria-label={`Aller au projet ${project.name}`}
-                  >
-                    Voir détails
-                  </a>
-                </div>
-              </article>
+              <ProjectCard key={project.name} project={project} />
             ))}
           </div>
         </section>
 
+        {/* Section: Soft Skills (compétences transversales) */}
         <section className="card">
           <h2>Soft skills</h2>
           <div className="chips">
+
+            {/* Boucle pour afficher chaque compétence en badge */}
             {softSkills.map((skill) => (
               <span key={skill} className="chip">
                 {skill}
@@ -233,96 +267,51 @@ export default function App() {
           </div>
         </section>
 
+        {/* Section: Langues avec niveaux */}
         <section className="card">
           <h2>Langues</h2>
           <ul className="language-list">
-            {languages.map((lang) => {
-              const max = lang.max ?? 180;
-              const hasScore = typeof lang.score === "number";
-              const percent = hasScore ? Math.round((lang.score / max) * 100) : 0;
-
-              return (
-                <li key={lang.name} className="language-item">
-                  <div className="row">
-                    <h3>{lang.name}</h3>
-                    <span>{lang.note}</span>
-                  </div>
-                  {hasScore && (
-                    <div
-                      className="language-bar"
-                      aria-label={`LinguaSkill ${lang.score}/${max}`}
-                    >
-                      <div
-                        className="language-bar__fill"
-                        style={{ width: `${percent}%` }}
-                      />
-                      <span className="language-bar__label">
-                        {lang.score}/{max}
-                      </span>
-                    </div>
-                  )}
-                </li>
-              );
-            })}
+            
+            {/* Boucle pour afficher chaque langue */}
+            {languages.map((lang) => (
+              <LanguageItem key={lang.name} lang={lang} />
+            ))}
+          </ul>
+        </section>
+        <section className="card">
+          <h2>Recommandations</h2>
+          <ul className="language-list">
+            
+            {/* Boucle pour afficher chaque recommandation */}
+            {recommendations.map((rec) => (
+              <li key={rec.name}>
+                <strong>{rec.name}</strong><br />
+                <a href={`mailto:${rec.email}`}>{rec.email}</a>
+              </li>
+            ))}
           </ul>
         </section>
       </main>
 
+      {/* Section des Projets detaillee */}
+      
       <section className="card card--wide" aria-label="Détails des projets">
         <h2>Détails des projets</h2>
         <div className="project-detail-list">
+          
+          {/* Boucle pour afficher les détails complets de chaque projet */}
           {projects.map((project) => (
-            <article
+            <ProjectDetail
               key={project.id}
-              id={`project-${project.id}`}
-              className="project-detail"
-            >
-              <div className="row">
-                <h3>{project.name}</h3>
-                <span className="muted">{project.stack}</span>
-              </div>
-              <p>{project.description}</p>
-              {project.paperUrl && (
-                <a
-                  className="project-link"
-                  href={project.paperUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Article du Modele de Bertram
-                </a>
-              )}
-              {Array.isArray(project.images) && project.images.length > 0 && (
-                <div className="project-images">
-                  {project.images.map((image) => (
-                    <img
-                      key={image}
-                      className="project-image"
-                      src={image}
-                      alt={`Courbe du projet ${project.name}`}
-                    />
-                  ))}
-                </div>
-              )}
-              {project.image && (
-                <img
-                  className="project-image"
-                  src={project.image}
-                  alt={`Courbe du projet ${project.name}`}
-                />
-              )}
-              <ul className="bullets">
-                {project.details.map((detail) => (
-                  <li key={detail}>{detail}</li>
-                ))}
-              </ul>
-              <a className="back-link" href="#top">
-                Retour en haut
-              </a>
-            </article>
+              project={project}
+              onImageClick={setZoomedImage} // Passe la fonction pour zoomer les images
+            />
           ))}
         </div>
       </section>
+
+      {/* parametre de zoom */}
+      <ImageModal image={zoomedImage} onClose={() => setZoomedImage(null)} />
     </div>
   );
 }
