@@ -79,7 +79,7 @@ export default function ProjectDetail({ project, onImageClick }) {
             />
           )}
           <p>Par la suite, on va utiliser le code obtenu afin de simuler divers modèles et paramétrages.
-        Suite prochainement...
+            Projet en cours.
         </p>
         </>
       )}
