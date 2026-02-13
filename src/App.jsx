@@ -75,7 +75,7 @@ const projects = [
     name: "Respiration Mitochondriale",
     stack: "C++ , Python ", 
     description: "Basée sur le modèle de Bertram et al.", 
-        images: ["/ressources/resultats_graph.png","/ressources/resultats_graph13.png","/ressources/resultats_graph14.png"], 
+        images: ["./ressources/resultats_graph.png","./ressources/resultats_graph13.png","./ressources/resultats_graph14.png"], 
     paperUrl: "https://www.math.fsu.edu/~bertram/papers/beta/simpleMK.pdf", 
   },
   {
@@ -84,9 +84,9 @@ const projects = [
     stack: "C++",
     description:
       "Basée sur un devoir de l'Université de Bordeaux, avec visualisation en temps réel.",
-    video: "/ressources/edo_video.mp4",
-    image: "/ressources/edo_image.png",
-    pdf: "/ressources/edo_chaleur.pdf",
+    video: "./ressources/edo_video.mp4",
+    image: "./ressources/edo_image.png",
+    pdf: "./ressources/edo_chaleur.pdf",
   },
 ];
 
