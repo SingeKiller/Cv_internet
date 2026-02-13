@@ -11,7 +11,7 @@ import LanguageItem from './components/LanguageItem';
 
 const recommendations = [
   {
-    name: "Lisl Weynans",
+    name: "Weynans Lisl",
     email: "lisl.weynans@u-bordeaux.fr",
   },
   {
