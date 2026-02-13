@@ -65,8 +65,8 @@ const experiences = [
 
 const projects = [
   {
-    id: "portfolio-interactif",
-    name: "Portfolio interactif",
+    id: "Cv Web",
+    name: "Cv Web",
     stack: "React, Vite, HTML5, CSS",
     description: ["Site personnel avec sections dynamiques et animations légères."],
   },
