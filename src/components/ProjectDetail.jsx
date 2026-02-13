@@ -29,7 +29,7 @@ export default function ProjectDetail({ project, onImageClick }) {
       
       {/* Affichage conditionnel: lien vers article scientifique si fourni */}
       {project.paperUrl && (
-        
+        <p></p>
         <a
           className="project-link"
           href={project.paperUrl}
@@ -38,7 +38,10 @@ export default function ProjectDetail({ project, onImageClick }) {
         >
           Article du Modèle de Bertram
         </a>
-      )}
+      )
+      <p>ce site effectue sur des connaissances basiques en HTML5 Js(React) et Css, 
+        afin de transmettres ma personnalite et ma motivation a evolue pour un futur proche.
+        Un autre projet web actuellement en developpement...</p>}
       
       
       {/* Affichage conditionnel: galerie d'images avec commentaires si tableau fourni */}
