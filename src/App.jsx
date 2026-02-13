@@ -181,7 +181,7 @@ export default function App() {
         <div>
           <p className="eyebrow"></p>
           <h1>Olivier REPAUZET</h1>
-          <p className="subtitle">Futur Ingénieur Mathématiques Appliquées et Statistiques</p>
+          <p className="subtitle">Master Mathématiques Appliquées et Statistiques</p>
           
           {/* données de contact */}
           <div className="meta">
