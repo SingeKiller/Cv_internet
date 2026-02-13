@@ -26,7 +26,7 @@ export default function ProjectDetail({ project, onImageClick }) {
       
       {/* Texte supplémentaire uniquement pour le portfolio interactif */}
       {project.id === "portfolio-interactif" && (
-        <p>Ce site effectue sur des connaissances basiques en HTML5 Js(React) et Css, afin de transmettres ma personnalité et ma motivation à évoluer pour un futur proche. Un autre projet web actuellement en développement...</p>
+        <p>Ce site est effectué a partir de mes connaissances en HTML5 Js(React) et Css appris en autodidacte. Un autre projet web actuellement en développement...</p>
       )}
       
       {/* Affichage conditionnel: lien vers article scientifique si fourni */}
@@ -48,7 +48,7 @@ export default function ProjectDetail({ project, onImageClick }) {
         <p>Dans ce projet, on a étudié le modèle de Bertram qui a fait une simplification du modèle de Magnus-Keizer
         dans lequel il a introduit un substrat FBP (Fructose 1,6-bisphosphate) pour expliquer les oscillations de la respiration mitochondriale.
         Dans le modèle de Magnus-Keizer, des équations de la thermodynamique y sont introduites. Bertram souhaitait faire une approche analytique en se basant sur les résultats expérimentaux.
-        Avec diverses méthodes, il a sorti des coefficients afin de minimiser l'erreur entre les résultats de son modèle et les résultats expérimentaux, et ainsi trouver une solution analytique pour expliquer les oscillations de la respiration mitochondriale.
+        Dans son approche, il a éliminé des facteurs issue de la thermodynamique, et ajusté avec des coefficients plus simple afin de minimiser l'erreur entre les résultats de son modèle et les résultats expérimentaux, et ainsi trouver une solution analytique pour expliquer les oscillations de la respiration mitochondriale.
         C'est en reprenant son modèle que j'ai recréé un code C++ pour simuler le modèle de Bertram, et j'ai obtenu des résultats similaires à ceux de Bertram, confirmant la validité de son modèle et de mon code.
         </p>
           {project.images[0] && (
