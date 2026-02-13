@@ -25,7 +25,7 @@ export default function ProjectDetail({ project, onImageClick }) {
       <p>{project.description}</p>
       
       {/* Texte supplémentaire uniquement pour le portfolio interactif */}
-      {project.id === "portfolio-interactif" && (
+      {project.id === "Cv Web" && (
         <p>Ce site est effectué a partir de mes connaissances en HTML5 Js(React) et Css appris en autodidacte. Un autre projet web actuellement en développement</p>
       )}
       
