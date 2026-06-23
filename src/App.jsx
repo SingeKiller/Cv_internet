@@ -61,8 +61,6 @@ const experiences = [
   },
 ];
 
-// Projets techniques
-
 const projects = [
   {
     id: "Cv Web",
@@ -74,7 +72,7 @@ const projects = [
     id: "respiration-mitochondriale",
     name: "Respiration Mitochondriale",
     stack: "C++ , Python ", 
-    description: "Basée sur le modèle de Bertram et al.", 
+    description: "Algorithme génétique basée sur le modèle de Bertram et al.", 
     images: ["./ressources/resultats_graph.png","./ressources/resultats_graph13.png","./ressources/resultats_graph14.png"], 
     paperUrl: "https://www.math.fsu.edu/~bertram/papers/beta/simpleMK.pdf", 
   },
@@ -90,9 +88,6 @@ const projects = [
   },
 ];
 
-
-//  Compétences transversales
-
 const softSkills = [
   "Maîtrise du stress",
   "Rigueur",
@@ -102,9 +97,6 @@ const softSkills = [
   "Travail en équipe",
   "Éloquence",
 ];
-
-
-// Langues maîtrisées
 
 const languages = [
   {
@@ -127,9 +119,12 @@ const languages = [
   },
 ];
 
-// Parcours scolaire et diplômes
-
 const parcours = [
+  {
+    title: "Master MAS : Image, optimisation de donnée",
+    school: "Université de Bordeaux",
+    period: "2026 - 2028",
+  },
   {
     title: "Licence Ingénierie Mathématiques",
     school: "Université de Bordeaux",
@@ -162,28 +157,19 @@ const parcours = [
   },
 ];
 
-/**
- * Composant principal de l'application - Portfolio/CV
- * Gère l'état du modal de zoom d'image et orchestre tous les autres composants
- */
 export default function App() {
-  // State pour gérer l'image zoomée (null = pas de zoom, string = URL de l'image zoomée)
   const [zoomedImage, setZoomedImage] = useState(null);
 
   return (
-    // Conteneur principal avec ID pour la navigation "retour en haut"
     <div className="page" id="top">
-     
-      {/* En-tête avec présentation */}
       
       <header className="hero">
-        {/* Bloc gauche: informations personnelles */}
+  
         <div>
           <p className="eyebrow"></p>
           <h1>Olivier REPAUZET</h1>
-          <p className="subtitle">Master Mathématiques Appliquées et Statistiques</p>
+          <p className="subtitle">Alternance pour Master Mathématiques Appliquées et Statistiques (MAS) </p>
           
-          {/* données de contact */}
           <div className="meta">
             <span>Bordeaux, France</span>
             <span>olivier.repauzet@etu.u-bordeaux.fr</span>
@@ -192,7 +178,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Bloc droite: résumé/profil */}
         <div className="summary">
           <h2>Profil</h2>
           <p>
@@ -206,12 +191,10 @@ export default function App() {
 
       <main className="grid grid--primary">
         
-        {/* Colonne 1: Parcours scolaire */}
         <section className="card">
           <h2>Parcours</h2>
           <ul className="timeline">
-
-            {/* Boucle pour afficher chaque diplôme */}
+            
             {parcours.map((item) => (
               <TimelineItem
                 key={item.title}
@@ -223,12 +206,10 @@ export default function App() {
           </ul>
         </section>
 
-        {/* Colonne 2: Expériences professionnelles */}
         <section className="card">
           <h2>Expériences professionnelles</h2>
           <ul className="timeline">
             
-            {/* Boucle pour afficher chaque expérience */}
             {experiences.map((exp) => (
               <TimelineItem
                 key={exp.title}
@@ -241,24 +222,20 @@ export default function App() {
           </ul>
         </section>
 
-        {/* Colonne 3: Grille de projets */}
         <section className="card">
           <h2>Projets</h2>
           <div className="projects">
             
-            {/* Boucle pour afficher chaque carte de projet */}
             {projects.map((project) => (
               <ProjectCard key={project.name} project={project} />
             ))}
           </div>
         </section>
 
-        {/* Section: Soft Skills (compétences transversales) */}
         <section className="card">
           <h2>Soft skills</h2>
           <div className="chips">
-
-            {/* Boucle pour afficher chaque compétence en badge */}
+            
             {softSkills.map((skill) => (
               <span key={skill} className="chip">
                 {skill}
@@ -267,12 +244,11 @@ export default function App() {
           </div>
         </section>
 
-        {/* Section: Langues avec niveaux */}
+
         <section className="card">
           <h2>Langues</h2>
           <ul className="language-list">
-            
-            {/* Boucle pour afficher chaque langue */}
+       
             {languages.map((lang) => (
               <LanguageItem key={lang.name} lang={lang} />
             ))}
@@ -282,7 +258,6 @@ export default function App() {
           <h2>Recommandations</h2>
           <ul className="language-list">
             
-            {/* Boucle pour afficher chaque recommandation */}
             {recommendations.map((rec) => (
               <li key={rec.name}>
                 <strong>{rec.name}</strong><br />
@@ -293,24 +268,22 @@ export default function App() {
         </section>
       </main>
 
-      {/* Section des Projets detaillee */}
+
       
       <section className="card card--wide" aria-label="Détails des projets">
         <h2>Détails des projets</h2>
         <div className="project-detail-list">
           
-          {/* Boucle pour afficher les détails complets de chaque projet */}
+    
           {projects.map((project) => (
             <ProjectDetail
               key={project.id}
               project={project}
-              onImageClick={setZoomedImage} // Passe la fonction pour zoomer les images
+              onImageClick={setZoomedImage}
             />
           ))}
         </div>
       </section>
-
-      {/* parametre de zoom */}
       <ImageModal image={zoomedImage} onClose={() => setZoomedImage(null)} />
     </div>
   );
