@@ -181,10 +181,11 @@ export default function App() {
         <div className="summary">
           <h2>Profil</h2>
           <p>
-            Étudiant en Licence ingénierie mathématiques, je suis rigoureux et méthodique.
-            Ma curiosité alimente une approche analytique structurée, tournée vers la résolution
-            de problèmes, l'optimisation et l'adaptabilité. J'aime la simulation des données pour ses
-            représentations et ses visualisations concrètes des expériences.
+            Étudiant en Master IOSD, je suis rigoureux et méthodique.
+            Ce parcours me permettra d’exploiter la puissance des mathématiques et des sciences des données pour traiter et analyser des images, 
+            optimiser des systèmes complexes et extraire des informations clés dans des contextes variés. 
+            je maîtriserai des outils et techniques indispensables, tels que l’analyse de Fourier ou Deep-Learning.
+            Que ce soit pour concevoir des algorithmes d’IA ou améliorer la précision des systèmes d’imagerie médicale.
           </p>
         </div>
       </header>
