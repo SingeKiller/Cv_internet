@@ -73,7 +73,7 @@ const projects = [
     name: "Respiration Mitochondriale",
     stack: "C++ , Python ", 
     description: "Algorithme génétique basée sur le modèle de Bertram et al.", 
-    images: ["./ressources/resultats_graph.png","./ressources/resultats_graph13.png","./ressources/resultats_graph14.png"], 
+    images: ["./ressources/resultats_graph.png","./ressources/resultats_graph13.png","./ressources/calibration_14h16_o2_comparison_14p0_20p68.png"], 
     paperUrl: "https://www.math.fsu.edu/~bertram/papers/beta/simpleMK.pdf", 
   },
   {
