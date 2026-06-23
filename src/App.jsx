@@ -90,9 +90,9 @@ const projects = [
 
 const softSkills = [
   "Maîtrise du stress",
-  "Rigueur",
-  "Esprit d'analyse",
-  "Curiosité intellectuelle",
+  "Analyse des données",
+  "Modélisation",
+  "Traitement signaux & images",
   "Capacité d'adaptation",
   "Travail en équipe",
   "Éloquence",
