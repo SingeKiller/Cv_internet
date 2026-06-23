@@ -42,7 +42,6 @@ export default function ProjectDetail({ project, onImageClick }) {
       )}
       
       
-      {/* Affichage conditionnel: galerie d'images avec commentaires si tableau fourni */}
       {Array.isArray(project.images) && project.images.length > 0 && (
         <>
         <p>Dans ce projet, on a étudié le modèle de Bertram qui a fait une simplification du modèle de Magnus-Keizer
@@ -71,8 +70,8 @@ export default function ProjectDetail({ project, onImageClick }) {
           )}
           {project.images[2] && (
             <MediaWithText
-              title="Surcharge du Flux Uniporteur"
-              description="On effectue une surcharge de flux uniporteur que l'on compare à un état stable avec pulse, et on observe une accentuation de la dépolarisation de la mitochondrie à cause de son flux qui est doublé et ainsi surchargé."
+              title="Algorithme génétique"
+              description="Algorithme génétique avec 25 générations de 100 individus en comparatif avec des données expérimentales où la concentration en oxygene à été relevé dans un milieu stable, et des ajouts de substrat à été effectué à t1 et t2. avec 30 variables paramétrées"
               type="image"
               src={project.images[2]}
               onImageClick={onImageClick}
