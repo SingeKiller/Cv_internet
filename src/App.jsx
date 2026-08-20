@@ -202,8 +202,7 @@ export default function App() {
         
         <section className="card">
           <h2>Parcours</h2>
-          <ul className="timeline">
-            
+          <ul className="timeline"> 
             {parcours.map((item) => (
               <TimelineItem
                 key={item.title}
@@ -218,7 +217,6 @@ export default function App() {
         <section className="card">
           <h2>Expériences professionnelles</h2>
           <ul className="timeline">
-            
             {experiences.map((exp) => (
               <TimelineItem
                 key={exp.title}
@@ -234,25 +232,22 @@ export default function App() {
         <section className="card">
           <h2>Projets</h2>
           <div className="projects">
-            
             {projects.map((project) => (
               <ProjectCard key={project.name} project={project} />
             ))}
           </div>
         </section>
 
-        <section className="card">
-          <h2>Soft skills</h2>
+       <section className="card">
+        <h2>Stack Technique</h2>
           <div className="chips">
-            
-            {softSkills.map((skill) => (
-              <span key={skill} className="chip">
-                {skill}
+            {stack.map((tech) => (
+              <span key={tech} className="chip"> 
+                {tech}
               </span>
             ))}
           </div>
         </section>
-
 
         <section className="card">
           <h2>Langues</h2>
@@ -263,10 +258,10 @@ export default function App() {
             ))}
           </ul>
         </section>
+        
         <section className="card">
           <h2>Recommandations</h2>
           <ul className="language-list">
-            
             {recommendations.map((rec) => (
               <li key={rec.name}>
                 <strong>{rec.name}</strong><br />
@@ -275,16 +270,7 @@ export default function App() {
             ))}
           </ul>
         </section>
-        <section className="card">
-        <h2>Stack Technique</h2>
-          <div className="chips">
-            {stack.map((tech) => (
-              <span key={tech} className="chip"> 
-                {tech}
-              </span>
-            ))}
-          </div>
-        </section>
+        
       </main>
 
 
