@@ -89,7 +89,6 @@ const projects = [
 ];
 
 const softSkills = [
-  "Maîtrise du stress",
   "Analyse des données",
   "Modélisation",
   "Traitement signaux & images",
@@ -97,6 +96,15 @@ const softSkills = [
   "Travail en équipe",
   "Éloquence",
 ];
+
+const Stack = [
+  "Python ( Numpy \ Pands , ...)"
+  "C++"
+  "SQL"
+  "JavaScript"
+  "Framework : React"
+  "HTML5 \ CSS"
+]
 
 const languages = [
   {
