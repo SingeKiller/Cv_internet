@@ -97,13 +97,13 @@ const softSkills = [
   "Éloquence",
 ];
 
-const Stack = [
-  "Python ( Numpy \ Pands , ...)",
+const stack = [
+  "Python ( Numpy, Pands , ...)",
   "C++",
   "SQL",
   "JavaScript",
   "Framework : React",
-  "HTML5 \ CSS",
+  "HTML5, CSS",
 ];
 
 const languages = [
@@ -274,6 +274,16 @@ export default function App() {
               </li>
             ))}
           </ul>
+        </section>
+        <section className="card">
+        <h2>Stack Technique</h2>
+          <div className="chips">
+            {stack.map((tech) => (
+              <span key={tech} className="chip"> 
+                {tech}
+              </span>
+            ))}
+          </div>
         </section>
       </main>
 
