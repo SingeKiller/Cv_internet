@@ -98,13 +98,13 @@ const softSkills = [
 ];
 
 const Stack = [
-  "Python ( Numpy \ Pands , ...)"
-  "C++"
-  "SQL"
-  "JavaScript"
-  "Framework : React"
-  "HTML5 \ CSS"
-]
+  "Python ( Numpy \ Pands , ...)",
+  "C++",
+  "SQL",
+  "JavaScript",
+  "Framework : React",
+  "HTML5 \ CSS",
+];
 
 const languages = [
   {
