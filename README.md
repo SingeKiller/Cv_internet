@@ -1,6 +1,6 @@
-# CV numérique — Olivier Repauzet
+# CV numérique; Olivier Repauzet
 
-*English: bilingual (French/English) digital CV of Olivier Repauzet, Applied Mathematics & Statistics master's student at the University of Bordeaux, seeking a work-study apprenticeship — [view it in English](https://singekiller.github.io/Cv_internet/?lang=en); the documentation below is in French.*
+*English: bilingual (French/English) digital CV of Olivier Repauzet, Applied Mathematics & Statistics master's student at the University of Bordeaux, seeking a work-study apprenticeship; [view it in English](https://singekiller.github.io/Cv_internet/?lang=en); the documentation below is in French.*
 
 CV numérique bilingue (français / anglais) d'Olivier Repauzet, étudiant en Master Mathématiques Appliquées & Statistique à l'Université de Bordeaux, en recherche d'alternance.
 
