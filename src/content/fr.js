@@ -1,6 +1,6 @@
 const fr = {
   meta: {
-    title: "Olivier Repauzet — Alternance data & statistique · Master MAS, Université de Bordeaux",
+    title: "Olivier Repauzet Alternance data & statistique · Master MAS, Université de Bordeaux",
     description:
       "CV numérique d'Olivier Repauzet, étudiant en Master Mathématiques appliquées, statistique (parcours Image, Optimisation et sciences des données) à l'Université de Bordeaux, à la recherche d'une alternance de 2 ans en statistique, science des données et traitement d'image.",
   },
