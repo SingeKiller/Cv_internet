@@ -1,11 +1,83 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React App</title>
+    <title>Olivier Repauzet — Alternance data & statistique · Master MAS, Université de Bordeaux</title>
+    <meta
+      name="description"
+      content="CV numérique d'Olivier Repauzet, étudiant en Master Mathématiques appliquées, statistique (parcours Image, Optimisation et sciences des données) à l'Université de Bordeaux, à la recherche d'une alternance de 2 ans en statistique, science des données et traitement d'image."
+    />
+    <meta name="author" content="Olivier Repauzet" />
+    <meta name="theme-color" content="#08090e" />
+    <link rel="canonical" href="https://singekiller.github.io/Cv_internet/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Olivier Repauzet — Alternance data & statistique" />
+    <meta
+      property="og:description"
+      content="Master Mathématiques appliquées, statistique (Université de Bordeaux) : modéliser, évaluer, interpréter. Projets, formation et parcours, en français et en anglais."
+    />
+    <meta property="og:url" content="https://singekiller.github.io/Cv_internet/" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+    />
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var theme = null;
+        var lang = null;
+        try {
+          theme = localStorage.getItem("theme");
+          lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("lang");
+        } catch (e) {}
+        if (theme !== "light" && theme !== "dark") {
+          theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        if (lang !== "fr" && lang !== "en") {
+          lang = null;
+          var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "fr"];
+          for (var i = 0; i < prefs.length && !lang; i++) {
+            var code = String(prefs[i]).slice(0, 2).toLowerCase();
+            if (code === "fr" || code === "en") lang = code;
+          }
+        }
+        root.setAttribute("data-theme", theme);
+        root.setAttribute("lang", lang || "en");
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Olivier Repauzet",
+        "jobTitle": "Étudiant en Master Mathématiques appliquées, statistique",
+        "url": "https://singekiller.github.io/Cv_internet/",
+        "email": "mailto:olivier.repauzet@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Bordeaux", "addressCountry": "FR" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Université de Bordeaux" },
+        "knowsAbout": ["Statistique", "Science des données", "Traitement d'image", "Régression", "Python", "C++"],
+        "sameAs": ["https://www.linkedin.com/in/olivier-repauzet-7076aa310", "https://github.com/SingeKiller"]
+      }
+    </script>
   </head>
   <body>
+    <noscript>
+      <p style="padding: 24px; font-family: sans-serif">
+        Ce site nécessite JavaScript. / This site requires JavaScript. —
+        <a href="ressources/CV_Olivier_Repauzet.pdf">CV (PDF)</a>
+      </p>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

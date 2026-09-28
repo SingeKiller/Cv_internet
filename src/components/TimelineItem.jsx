@@ -1,32 +1,21 @@
-/**
- * Composant pour afficher un élément de timeline (parcours ou expérience)
- * 
- * @param {string} title - Titre principal (poste ou diplôme)
- * @param {string} period - Période (dates)
- * @param {string} subtitle - Sous-titre (entreprise ou école)
- * @param {array} details - Liste optionnelle de détails/tâches
- */
-export default function TimelineItem({ title, period, subtitle, details }) {
+import Reveal from "./Reveal.jsx";
+
+export default function TimelineItem({ item, highlightTag, delay = 0 }) {
   return (
-    <li>
-      {/* En-tête avec titre à gauche et période à droite */}
-      <div className="row">
-        <h3>{title}</h3>
-        <span>{period}</span>
-      </div>
-      
-      {/* Sous-titre en gris (entreprise/école) */}
-      <p className="muted">{subtitle}</p>
-      
-      {/* Affichage conditionnel: liste de détails si elle existe */}
-      {details && (
-        <ul className="bullets">
-          {/* Boucle pour afficher chaque détail */}
-          {details.map((detail) => (
+    <Reveal as="li" className={`timeline-item${item.highlight ? " timeline-item--highlight" : ""}`} delay={delay}>
+      <p className="timeline-item__period">
+        {item.period}
+        {item.highlight && <span className="tag">{highlightTag}</span>}
+      </p>
+      <h4 className="timeline-item__title">{item.title}</h4>
+      {item.org && <p className="timeline-item__org">{item.org}</p>}
+      {item.details && (
+        <ul className="timeline-item__details">
+          {item.details.map((detail) => (
             <li key={detail}>{detail}</li>
           ))}
         </ul>
       )}
-    </li>
+    </Reveal>
   );
 }

@@ -1,0 +1,155 @@
+.degree {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(20px, 3.5vw, 44px);
+  align-items: center;
+  padding: clamp(24px, 3.6vw, 40px);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius-lg) + 4px);
+  background: radial-gradient(900px 260px at 0% 0%, var(--accent-soft), transparent 60%), var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.degree__logo {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.degree__logo img {
+  width: 72px;
+  height: 72px;
+}
+
+.degree__period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.degree__title {
+  margin-top: 0.4rem;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+}
+
+.degree__track {
+  margin-top: 0.35rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.degree__school {
+  margin-top: 0.15rem;
+  color: var(--text-muted);
+}
+
+.degree__text {
+  padding-left: clamp(16px, 2.4vw, 32px);
+  border-left: 1px solid var(--border-strong);
+  color: var(--text-muted);
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 20px;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.course .icon-badge {
+  margin-bottom: 0.4rem;
+}
+
+.course__title {
+  font-size: 1.15rem;
+}
+
+.course__text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.course__impact {
+  font-size: 0.93rem;
+}
+
+.course__impact strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.course__applied {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin-top: auto;
+  padding-top: 0.8rem;
+  border-top: 1px dashed var(--border-strong);
+  font-size: 0.86rem;
+  color: var(--text-faint);
+}
+
+.course__applied a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.course__applied a:hover {
+  color: var(--accent);
+}
+
+.course__applied .icon {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.25s var(--ease-out);
+}
+
+.course__applied a:hover .icon {
+  transform: translateX(3px);
+}
+
+@media (max-width: 900px) {
+  .degree {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .degree__text {
+    grid-column: 1 / -1;
+    padding-left: 0;
+    padding-top: 1rem;
+    border-left: 0;
+    border-top: 1px solid var(--border-strong);
+  }
+}
+
+@media (max-width: 480px) {
+  .degree {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
+  }
+
+  .degree__logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .degree__logo img {
+    width: 60px;
+    height: 60px;
+  }
+}

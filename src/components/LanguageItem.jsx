@@ -1,49 +1,27 @@
-/**
- * Composant pour afficher une langue avec son niveau et optionnellement une barre de progression
- * 
- * @param {object} lang - Objet contenant les infos de la langue
- * @param {string} lang.name - Nom de la langue
- * @param {string} lang.note - Niveau (A1, B1, Natif, etc.)
- * @param {number} lang.score - Score optionnel (ex: LinguaSkill)
- * @param {number} lang.max - Score maximum optionnel (défaut: 180)
- */
-export default function LanguageItem({ lang }) {
-  // Score maximum (180 par défaut pour LinguaSkill)
-  const max = lang.max ?? 180;
-  
-  // Vérifie si un score numérique est fourni
-  const hasScore = typeof lang.score === "number";
-  
-  // Calcule le pourcentage pour la barre de progression
-  const percent = hasScore ? Math.round((lang.score / max) * 100) : 0;
+const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
+export function CefrScale() {
   return (
-    <li className="language-item">
-        
-      {/* En-tête: nom de la langue à gauche, niveau à droite */}
-      <div className="row">
-        <h3>{lang.name}</h3>
-        <span>{lang.note}</span>
-      </div>
-      
-      {/* Affichage conditionnel: barre de progression seulement si score existe */}
-      {hasScore && (
-        <div
-          className="language-bar"
-          aria-label={`LinguaSkill ${lang.score}/${max}`}
-        >
+    <div className="cefr cefr--scale" aria-hidden="true">
+      {CEFR_LEVELS.map((level) => (
+        <span key={level}>{level}</span>
+      ))}
+    </div>
+  );
+}
 
-          {/* Barre de remplissage colorée */}
-          <div
-            className="language-bar__fill"
-            style={{ width: `${percent}%` }} // Largeur dynamique selon le score
-          />
-          {/* Label affichant le score */}
-          <span className="language-bar__label">
-            {lang.score}/{max}
-          </span>
-        </div>
-      )}
+export default function LanguageItem({ lang, scaleLabel }) {
+  return (
+    <li className="language">
+      <div className="language__head">
+        <span className="language__name">{lang.name}</span>
+        <span className="language__level">{lang.level}</span>
+      </div>
+      <div className="cefr" role="img" aria-label={`${scaleLabel} ${lang.level}`}>
+        {CEFR_LEVELS.map((level, i) => (
+          <span key={level} className={i < lang.rank ? "is-on" : undefined} style={{ "--i": i }} />
+        ))}
+      </div>
     </li>
   );
 }
