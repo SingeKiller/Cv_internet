@@ -10,7 +10,7 @@ export default function Figure({ src, alt, caption, onZoom, className = "" }) {
         type="button"
         className="figure__zoom"
         onClick={() => onZoom({ src, alt, caption })}
-        aria-label={`${t.ui.zoomImage} — ${alt}`}
+        aria-label={`${t.ui.zoomImage} ${alt}`}
       >
         <img src={src} alt="" loading="lazy" decoding="async" />
         <span className="figure__zoom-icon" aria-hidden="true">

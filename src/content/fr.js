@@ -39,7 +39,7 @@ const fr = {
       "Étudiant en Master Mathématiques appliquées, statistique à l'Université de Bordeaux (parcours Image, Optimisation et sciences des données), je construis des modèles à partir des données, j'évalue leur fiabilité et j'en tire des conclusions utiles, en Python et en C++.",
     ctaPrimary: "Découvrir mes projets",
     ctaSecondary: "Télécharger le CV",
-    simCaption: "∂u/∂t = α Δu — équation de la chaleur résolue en direct",
+    simCaption: "∂u/∂t = α Δu équation de la chaleur résolue en direct",
     simHint: "Survolez ou touchez pour chauffer",
     simPause: "Mettre la simulation en pause",
     simPlay: "Relancer la simulation",
@@ -95,7 +95,7 @@ const fr = {
       "Optimisation",
     ],
     sectorsLabel: "Secteurs visés",
-    sectors: "santé et imagerie médicale, optique et photonique, environnement, industrie — de préférence en R&D",
+    sectors: "santé et imagerie médicale, optique et photonique, environnement, industrie de préférence en R&D",
   },
 
   education: {
@@ -103,7 +103,7 @@ const fr = {
     title: "La statistique au cœur de ma formation.",
     lead: "Un Master qui associe statistique, optimisation et traitement d'image : les outils de la R&D en santé, en optique ou en environnement.",
     degree: {
-      period: "2026 — 2028 · en alternance",
+      period: "2026 2028 · en alternance",
       title: "Master Mathématiques appliquées, statistique",
       track: "Parcours Image, Optimisation et sciences des données (IOD)",
       school: "Université de Bordeaux",
@@ -485,14 +485,14 @@ const fr = {
     highlightTag: "En alternance",
     education: [
       {
-        period: "2026 — 2028",
+        period: "2026 2028",
         title: "Master Mathématiques appliquées, statistique",
         org: "Université de Bordeaux · parcours Image, Optimisation et sciences des données (IOD)",
         details: ["Formation suivie en alternance"],
         highlight: true,
       },
       {
-        period: "2025 — 2026",
+        period: "2025 2026",
         title: "Licence 3 Ingénierie mathématique",
         org: "Université de Bordeaux",
         details: ["Projet : calibration d'un modèle d'EDO mitochondrial par algorithme génétique"],
@@ -504,11 +504,11 @@ const fr = {
       },
       {
         period: "2024",
-        title: "PSPO — Scrum Product Owner",
+        title: "PSPO Scrum Product Owner",
         org: "Formation Scrum · gestion de projet agile",
       },
       {
-        period: "2021 — 2024",
+        period: "2021 2024",
         title: "CAP Pâtissier + mention complémentaire",
         org: "Institut des Saveurs",
         details: ["Mention complémentaire pâtisserie, glacerie, chocolaterie, confiserie spécialisées"],
@@ -536,7 +536,7 @@ const fr = {
         ],
       },
       {
-        period: "Janv. 2025 — Août 2025",
+        period: "Janv. 2025 Août 2025",
         title: "Responsable d'admission de nouveaux élèves",
         org: "Youschool, école à distance",
         details: [
@@ -546,7 +546,7 @@ const fr = {
         ],
       },
       {
-        period: "Août 2023 — Janv. 2025",
+        period: "Août 2023 Janv. 2025",
         title: "Chef de partie pâtisserie",
         org: "Le 7 Restaurant, La Cité du Vin · Bordeaux",
         details: [
@@ -556,7 +556,7 @@ const fr = {
         ],
       },
       {
-        period: "Août 2021 — Juil. 2022",
+        period: "Août 2021 Juil. 2022",
         title: "Apprenti pâtissier",
         org: "Bérénils · Pessac",
         details: [

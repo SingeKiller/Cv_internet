@@ -1,6 +1,6 @@
 const en = {
   meta: {
-    title: "Olivier Repauzet — Apprenticeship in data & statistics · Master's MAS, University of Bordeaux",
+    title: "Olivier Repauzet Apprenticeship in data & statistics · Master's MAS, University of Bordeaux",
     description:
       "Digital CV of Olivier Repauzet, Master's student in Applied Mathematics & Statistics (Image, Optimisation and Data Science track) at the University of Bordeaux, seeking a 2-year apprenticeship in statistics, data science and image processing.",
   },
@@ -39,7 +39,7 @@ const en = {
       "Master's student in Applied Mathematics & Statistics at the University of Bordeaux (Image, Optimisation and Data Science track), I build models from data, assess how reliable they are and turn the results into useful conclusions, in Python and C++.",
     ctaPrimary: "Explore my projects",
     ctaSecondary: "Download CV",
-    simCaption: "∂u/∂t = α Δu — heat equation solved live",
+    simCaption: "∂u/∂t = α Δu heat equation solved live",
     simHint: "Hover or tap to add heat",
     simPause: "Pause the simulation",
     simPlay: "Resume the simulation",
@@ -95,7 +95,7 @@ const en = {
       "Optimisation",
     ],
     sectorsLabel: "Target sectors",
-    sectors: "healthcare and medical imaging, optics and photonics, environment, industry — ideally in R&D",
+    sectors: "healthcare and medical imaging, optics and photonics, environment, industry ideally in R&D",
   },
 
   education: {
@@ -103,7 +103,7 @@ const en = {
     title: "Statistics at the heart of my training.",
     lead: "A Master's that combines statistics, optimisation and image processing: the toolkit of R&D in healthcare, optics and the environment.",
     degree: {
-      period: "2026 — 2028 · apprenticeship",
+      period: "2026 2028 · apprenticeship",
       title: "Master's in Applied Mathematics & Statistics",
       track: "Image, Optimisation and Data Science track (IOD)",
       school: "University of Bordeaux",
@@ -485,14 +485,14 @@ const en = {
     highlightTag: "Apprenticeship",
     education: [
       {
-        period: "2026 — 2028",
+        period: "2026 2028",
         title: "Master's in Applied Mathematics & Statistics",
         org: "University of Bordeaux · Image, Optimisation and Data Science track (IOD)",
         details: ["Taken as an apprenticeship"],
         highlight: true,
       },
       {
-        period: "2025 — 2026",
+        period: "2025 2026",
         title: "BSc Mathematics, final year (Mathematical Engineering)",
         org: "University of Bordeaux",
         details: ["Project: calibrating a mitochondrial ODE model with a genetic algorithm"],
@@ -504,17 +504,17 @@ const en = {
       },
       {
         period: "2024",
-        title: "PSPO — Scrum Product Owner",
+        title: "PSPO Scrum Product Owner",
         org: "Scrum training · agile project management",
       },
       {
-        period: "2021 — 2024",
+        period: "2021 2024",
         title: "French vocational diploma in pastry (CAP) + one-year specialisation",
         org: "Institut des Saveurs",
         details: ["Specialisation in pastry, ice cream, chocolate and confectionery"],
       },
       {
-        period: "2016 — 2019",
+        period: "2016 2019",
         title: "Undergraduate studies in pure mathematics",
         org: "University of Bordeaux",
       },
@@ -536,7 +536,7 @@ const en = {
         ],
       },
       {
-        period: "Jan. 2025 — Aug. 2025",
+        period: "Jan. 2025 Aug. 2025",
         title: "Admissions officer (new students)",
         org: "Youschool, online school",
         details: [
@@ -546,7 +546,7 @@ const en = {
         ],
       },
       {
-        period: "Aug. 2023 — Jan. 2025",
+        period: "Aug. 2023 Jan. 2025",
         title: "Pastry chef de partie",
         org: "Le 7 Restaurant, La Cité du Vin · Bordeaux",
         details: [
@@ -556,7 +556,7 @@ const en = {
         ],
       },
       {
-        period: "Aug. 2021 — Jul. 2022",
+        period: "Aug. 2021 Jul. 2022",
         title: "Pastry apprentice",
         org: "Bérénils · Pessac",
         details: [
