@@ -9,10 +9,10 @@ import "./Header.css";
 
 const SECTIONS = [
   { id: "profil", key: "profile" },
-  { id: "formation", key: "education" },
-  { id: "projets", key: "projects" },
   { id: "parcours", key: "journey" },
+  { id: "formation", key: "education" },
   { id: "competences", key: "skills" },
+  { id: "projets", key: "projects" },
   { id: "contact", key: "contact" },
 ];
 const SECTION_IDS = SECTIONS.map((section) => section.id);
