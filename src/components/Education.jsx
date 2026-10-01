@@ -10,7 +10,7 @@ export default function Education() {
   const e = t.education;
 
   return (
-    <Section id="formation" index={2} kicker={e.kicker} title={e.title} lead={e.lead} alt>
+    <Section id="formation" index={3} kicker={e.kicker} title={e.title} lead={e.lead} alt>
       <Reveal as="article" className="degree" aria-labelledby="degree-title">
         <div className="degree__logo">
           <img src={media.universityLogo} alt={e.degree.logoAlt} width="72" height="72" />

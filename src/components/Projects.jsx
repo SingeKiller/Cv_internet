@@ -10,7 +10,7 @@ export default function Projects({ onZoom }) {
   const p = t.projects;
 
   return (
-    <Section id="projets" index={3} kicker={p.kicker} title={p.title} lead={p.lead}>
+    <Section id="projets" index={5} kicker={p.kicker} title={p.title} lead={p.lead}>
       <div className="projects__main">
         <ClimateProject onZoom={onZoom} />
         <FeaturedProject onZoom={onZoom} />

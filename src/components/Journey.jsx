@@ -14,7 +14,7 @@ export default function Journey() {
   ];
 
   return (
-    <Section id="parcours" index={4} kicker={j.kicker} title={j.title} lead={j.lead} alt>
+    <Section id="parcours" index={2} kicker={j.kicker} title={j.title} lead={j.lead} alt>
       <div className="journey">
         {columns.map((column) => (
           <div key={column.icon} className="journey__column">
