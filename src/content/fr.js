@@ -10,10 +10,10 @@ const fr = {
     navLabel: "Navigation principale",
     nav: {
       profile: "Profil",
-      education: "Formation",
-      projects: "Projets",
       journey: "Parcours",
+      education: "Formation",
       skills: "Compétences",
+      projects: "Projets",
       contact: "Contact",
     },
     menuOpen: "Ouvrir le menu",
