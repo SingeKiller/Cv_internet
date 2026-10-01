@@ -59,7 +59,7 @@ const fr = {
     paragraphs: [
       "Je recherche une alternance de 2 ans pour contribuer à des projets concrets en statistique, science des données et traitement d'image, et progresser au contact d'une équipe.",
       "En 2025, je suis revenu aux mathématiques par la voie appliquée : Licence 3 Ingénierie mathématique à l'Université de Bordeaux, où nous avons calibré un modèle d'EDO de l'activité mitochondriale sur des données expérimentales. Je poursuis en Master Mathématiques appliquées, statistique, parcours Image, Optimisation et sciences des données, de 2026 à 2028.",
-      "Après des études de mathématiques fondamentales à l'université, j'ai choisi la pâtisserie : CAP, mention complémentaire, puis chef de partie au restaurant Le 7 de La Cité du Vin. Un métier de précision, de processus et de sang-froid.",
+      "Par le passé j'ai effectué des études de mathématiques fondamentales à l'université de Bordeaux, j'ai éffectué en suivant reconversion professionelle et j'ai choisi la pâtisserie : CAP, mention complémentaire, puis chef de partie au restaurant Le 7 de La Cité du Vin. Un métier de précision, de processus et de sang-froid.",
     ],
     valuesTitle: "Ce que j'apporte",
     values: [
