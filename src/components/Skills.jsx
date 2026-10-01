@@ -10,7 +10,7 @@ export default function Skills() {
   const s = t.skills;
 
   return (
-    <Section id="competences" index={5} kicker={s.kicker} title={s.title} lead={s.lead}>
+    <Section id="competences" index={4} kicker={s.kicker} title={s.title} lead={s.lead}>
       <div className="skills-grid">
         {s.groups.map((group, i) => (
           <Reveal key={group.icon} className="card card--interactive card--glow skill-group" delay={i * 80}>
