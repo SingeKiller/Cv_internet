@@ -29,10 +29,10 @@ export default function App() {
         <Hero />
         <Metrics />
         <Profile />
-        <Education />
-        <Projects onZoom={setZoomedImage} />
         <Journey />
+        <Education />
         <Skills />
+        <Projects onZoom={setZoomedImage} />
         <Contact />
       </main>
 
